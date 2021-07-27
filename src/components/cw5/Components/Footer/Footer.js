@@ -22,6 +22,8 @@ const Footer = () => {
 
 const FooterSection = styled.section`
   ${tw`
+    px-6
+    lg:px-0
     py-10
     w-full
     flex
@@ -35,6 +37,8 @@ const Container = styled.div`
     w-full
     md:max-w-6xl
     flex
+    flex-col
+    md:flex-row
     items-center
     justify-between
   `}
@@ -49,15 +53,20 @@ const LogoContainer = styled.div`
 
 const TnCContainer = styled.div`
   ${tw`
+    mt-2
+    md:mt-0
     w-full
     flex
     items-center
-    justify-center
+    justify-start
+    md:justify-end
   `}
 
   a {
     ${tw`
-      px-3
+      mr-6
+      md:mr-0
+      md:px-3
       relative
     `}
 
